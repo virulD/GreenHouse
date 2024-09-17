@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Six Window Web Interface</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+ <div class="window" id="window1">
+    Temperature: <span id="temperatureValue"></span>
+    <label class="switch">
+        
+        <input type="checkbox" onclick="toggleWindow('window1')" checked>
+        <span class="slider"></span>
+    </label>
+    <span class="status" id="status1">On</span>
+</div>
+
+<div class="window" id="window4">
+    Water Level: <span id="waterLevelValue">50%</span>
+    <label class="switch">
+        <input type="checkbox" onclick="toggleWindow('window4')" checked>
+        <span class="slider"></span>
+    </label>
+    <span class="status" id="status4">On</span>
+</div>
+
+<div class="window" id="window5">
+    Soil Moisture: <span id="soilMoistureValue">30%</span>
+    <label class="switch">
+        <input type="checkbox" onclick="toggleWindow('window5')" checked>
+        <span class="slider"></span>
+    </label>
+    <span class="status" id="status5">On</span>
+</div>
+
+
+</body>
+</html>
